@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>PDF Slider</title>
+	<script type="text/javascript" src="../lib/pdfobject.js"></script>
+    <script type="text/javascript">
+      window.onload = function (){
+        var success = new PDFObject({ url: "http://samplepdf.com/sample.pdf" }).embed("pdfContainer");
+      };
+    </script>
+</head>
+<body>
+<p>This page contains the demo for a slider with PDF files.</p>
+
+<p>It appears you don't have Adobe Reader or PDF support in this web
+    browser. <a href="sample.pdf">Click here to download the PDF</a></p>
+
+<div id="pdfContainer"></div>
+</body>
+</html>
