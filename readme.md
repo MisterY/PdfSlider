@@ -3,3 +3,8 @@ It uses SlidesJS (http://slidesjs.com/) and PDFObject (http://pdfobject.com/) co
 PdfSlider is intended to be pure HTML5 implementation. So, just HTML, CSS, and JavaScript allowed. (CoffeeScript is JavaScript :).
 
 I am using SamplePDF.com for generating a test PDF that is embedded in the page.
+
+Repos:
+======
+SlideJS: https://github.com/nathansearles/Slides/tree/SlidesJS-3
+PDFObject: https://github.com/pipwerks/PDFObject
