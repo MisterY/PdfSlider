@@ -132,6 +132,9 @@
 	<script type="text/javascript">
 		window.onload = function (){
 			var success = new PDFObject({ url: "http://samplepdf.com/sample.pdf" }).embed("pdfContainer");
+
+			// Keep a reference to pdf object globally available (for loading of the next doc).
+			window.pdfObject = success;
 		};
 	</script>
 </head>
@@ -177,5 +180,19 @@
 	</script>
 	<!-- End SlidesJS Required -->
 
+	<div>
+		<p>
+			<span id="nextPdf">Next PDF</span>
+		</p>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			// replace PDF on click
+			$("#nextPdf").on("click", function(){
+				var success = new PDFObject({ url: "http://www.selab.isti.cnr.it/ws-mate/example.pdf" }).embed("pdfContainer");
+				window.pdfObject = success;
+			})
+		})
+	</script>
 </body>
 </html>
